@@ -6,8 +6,10 @@ public class CountryTrip
 
     public int IdTrip { get; set; }
     
-    public virtual Country IdCountryNavigation { get; set; } = null!;
+    //public virtual Country IdCountryNavigation { get; set; } = null!;
 
-    public virtual Trip IdTripNavigation { get; set; } = null!;
+    //public virtual Trip IdTripNavigation { get; set; } = null!;
+    public Trip Trip { get; set; }
+    public Country Country { get; set; }
 
 }

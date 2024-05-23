@@ -13,4 +13,5 @@ public class Client
     public string Telephone { get; set; }
     
     public string Pesel { get; set; }
+    public ICollection<ClientTrip> ClientTrips { get; set; }
 }

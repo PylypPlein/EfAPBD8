@@ -13,4 +13,6 @@ public class Trip
     public DateTime DateTo { get; set; }
     
     public int MaxPeople { get; set; }
+    public ICollection<ClientTrip> ClientTrips { get; set; }
+    public ICollection<CountryTrip> CountryTrips { get; set; }
 }
