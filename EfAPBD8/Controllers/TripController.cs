@@ -1,5 +1,6 @@
 ﻿using EfAPBD8.Context;
 using EfAPBD8.DTOs;
+using EfAPBD8.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -46,5 +47,37 @@ public class TripController : ControllerBase
             .ToListAsync();
 
         return Ok(trips);
+    }
+    [HttpPost("{idTrip}/clients")]
+    public async Task<IActionResult> AssignClientToTripAsync(int idTrip, [FromBody] TripsDTO.ClientDTO clientData)
+    {
+        var trip = await _context.Trips.FindAsync(idTrip);
+        if (trip == null)
+        {
+            return NotFound();
+        }
+        
+        var client = new Client
+        {
+            FirstName = clientData.FirstName,
+            LastName = clientData.LastName,
+            Email = clientData.Email,
+            Telephone = clientData.Telephone,
+            Pesel = clientData.Pesel
+        };
+        _context.Clients.Add(client);
+        await _context.SaveChangesAsync();
+        
+        var clientTrip = new ClientTrip
+        {
+            IdClient = client.IdClient,
+            IdTrip = idTrip,
+            RegisteredAt = 1,
+            PaymentDate = 1
+        };
+        _context.ClientTrips.Add(clientTrip);
+        await _context.SaveChangesAsync();
+
+        return Ok("Klient został przypisany do wycieczki.");
     }
 }
