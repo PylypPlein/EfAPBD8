@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "jsvZSxLp2KIFjwhDmBwtQ69hSCcPIwRglqZoTocZXInn3UUGxVK7dBFnh9ImGr9b9M5jiXQVHRix3ttcyKbSOw==",
+  "dgSpecHash": "i5oJKZ29duBCgL9LYncRmqT44jooF+waD9h8SjkxWA6rw/9lmsVU67IFXyBZYbj8+a6z8xp9FDdL4c9Ga1J9cA==",
   "success": true,
   "projectFilePath": "C:\\Users\\gosc9\\RiderProjects\\EfAPBD8\\EfAPBD8\\EfAPBD8.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gosc9\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\gosc9\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\gosc9\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
-    "C:\\Users\\gosc9\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0\\microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
+    "C:\\Users\\gosc9\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.2\\microsoft.aspnetcore.openapi.8.0.2.nupkg.sha512",
     "C:\\Users\\gosc9\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\gosc9\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "C:\\Users\\gosc9\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0\\microsoft.codeanalysis.common.4.5.0.nupkg.sha512",

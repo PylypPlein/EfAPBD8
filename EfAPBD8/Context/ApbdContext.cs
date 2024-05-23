@@ -22,7 +22,7 @@ public class ApbdContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder
             .UseSqlServer(
-                "Data Source=localhost;Initial Catalog=APBD;User Id=sa;Password=YourStrong!Passw0rd;Encrypt=False")
+                "Data Source=localhost;Initial Catalog=APBD;User Id=sa;Password=YourStrongPassw0rd;Encrypt=False")
             .LogTo(Console.WriteLine, LogLevel.Information);
     protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
